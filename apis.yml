@@ -47,6 +47,10 @@ common:
     url: https://plos.org
   - type: Documentation
     url: https://api.plos.org/solr/examples/
+  - type: Integrations
+    url: https://plos.org/libraries/partners/
+integrations:
+  - name: PLOS
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
