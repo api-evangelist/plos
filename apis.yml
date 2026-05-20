@@ -43,6 +43,10 @@ apis:
       - type: SearchFields
         url: https://api.plos.org/solr/search-fields/
 common:
+  - type: GitHubOrganization
+    url: https://github.com/PLOS
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/public-library-of-science
   - type: Website
     url: https://plos.org
   - type: Documentation
