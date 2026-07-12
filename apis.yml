@@ -43,6 +43,8 @@ apis:
       - type: SearchFields
         url: https://api.plos.org/solr/search-fields/
 common:
+  - type: DomainSecurity
+    url: security/plos-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/PLOS
   - type: LinkedIn
@@ -53,6 +55,8 @@ common:
     url: https://api.plos.org/solr/examples/
   - type: Integrations
     url: https://plos.org/libraries/partners/
+  - url: https://theplosblog.plos.org/feed/
+    type: Blog
 integrations:
   - name: PLOS
 maintainers:
