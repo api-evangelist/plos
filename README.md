@@ -1,3 +1,5 @@
+# PLOS
+
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
 >
@@ -62,67 +64,104 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-## PLOS (plos)
+These examples use the search API to search the PLOS corpus of scientific articles. These examples are not intended to be a full explanation on the use of Solr. A full Solr query language explanation can be found here and a tutorial here. The construction of PLOS search queries deviates from the standard Solr query URL by using search instead of select when making request to the end point. The primary endpoint is http://api.plos.org/search and supports parameters such as q, fl, wt, start, and rows for querying the PLOS Solr index.
 
-These examples use the search API to search the PLOS corpus of scientific articles. These examples are not intended to be a full explanation on the use of Solr. A full Solr query language explanation can be found here and a tutorial here. The construction of PLOS search queries deviates from the standard Solr query URL by using `search` instead of `select` when making requests to the end point.
+**Areas:** Scientific Articles · Research · Search · Solr · Open Access · Publishing · Scholarly Publishing
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/plos/refs/heads/main/apis.yml)
+## PLOS on APIs.io
 
-## Scope
+Everything profiled for PLOS is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/plos/](https://apis.io/providers/plos/)** — or go straight to one of the APIs or properties below.
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+### APIs (1)
 
-## Tags
+- [PLOS Search API](https://apis.io/apis/plos/plos/) — These examples use the search API to search the PLOS corpus of scientific articles. These examples are not intended to be a full explanation on the use of…
 
-- Scientific Articles
-- Research
-- Search
-- Solr
-- Open Access
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2025-02-06
-- **Modified:** 2026-04-28
+#### Security (1)
 
-## APIs
+Authentication, trust centre, and vulnerability disclosure.
 
-### PLOS Search API
+- [Plos Domain Security](https://apis.io/security/plos/plos-domain-security/)
 
-These examples use the search API to search the PLOS corpus of scientific articles. The construction of PLOS search queries deviates from the standard Solr query URL by using `search` instead of `select` when making requests to the end point.
+#### Plans and pricing (1)
 
-**Human URL:** https://api.plos.org/solr/examples/
+Published plans, tiers and prices.
 
-**Base URL:** `http://api.plos.org/search`
+- [Plos Plans Pricing](https://apis.io/plans/plos/plos-plans-pricing/)
 
-#### Common Query Parameters
+#### Rate limits (1)
 
-- `q` - Search query and fields to search (required)
-- `fl` - Fields to return in the result set
-- `wt` - Response format (e.g. `json`, default `xml`)
-- `start` - Pagination start row
-- `rows` - Maximum number of results (default 10)
+Published request limits.
 
-#### Tags
+- [Plos Rate Limits](https://apis.io/rate-limits/plos/plos-rate-limits/)
 
-- Scientific Articles
-- Search
-- Solr
+#### FinOps (1)
 
-#### Properties
+What the API costs to run, by operation.
 
-- [Documentation](https://api.plos.org/solr/examples/)
-- [Search Fields](https://api.plos.org/solr/search-fields/)
+- [Plos Finops](https://apis.io/finops/plos/plos-finops/)
 
-## Common Properties
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://plos.org)
 - [Documentation](https://api.plos.org/solr/examples/)
+- [Blog](https://theplosblog.plos.org/feed/)
+- [GitHub](https://github.com/PLOS)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 10.1** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/plos/](https://apis.io/providers/plos/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PLOS: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/plos/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
